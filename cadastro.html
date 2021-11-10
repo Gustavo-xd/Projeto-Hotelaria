@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>hotel Gp</title>
+	<!--fonte awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style-cadastro.css">
+	<link rel = "icon" href = "images/logo2.png" type = "images/png">
+    <script>
+        function funcao1() {
+            alert("você está cadastrado!");
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>HOTEL GP</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn2">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+            <!-- barra de navegação lateral -->
+            <div class = "sidenav" id = "sidenav">
+                <span class = "cancel-btn2" id = "cancel-btn2">
+                    <i class = "fas fa-times"></i>
+                </span>
+    
+                <ul class = "navbar">
+                    <li><a href = "index.html">Home</a></li>
+                </ul>
+                <button class = "btn2 log-in"><a href = "conectar.html">Conecte-se</a></button>
+            </div>
+            <!-- modal em tela cheia -->
+            <div id = "modal"></div>
+    </header>
+
+    <main>
+        <form>
+            <div class="ali">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" class="input-padrao" required="" placeholder="taldojoao">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="input-padrao" required="" placeholder="seuemail@dominio.com">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" class="input-padrao" required="">
+
+            <label for="confirmarsenha">Confirmar Senha:</label>
+            <input type="password" name="confirmarsenha" class="input-padrao" required="">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" class="input-padrao" required="" placeholder="(XX) XXXXX-XXXX">
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+            <button class = "btn3 sign-up" onclick="funcao1()" value="Cadastrar"><a href = "index.html">Cadastrar</a></button>
+            </div>
+		</form>
+    </main>
+
+        <footer class="footer">
+            <div class = "footer-container">
+                <div class="social-media-wrap">
+                    <h4 class="footer-heading">Siga-nos</h4>
+                    <div class="social-media">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h2>Links Úteis</h2>
+                    <a href = "#" class="sm-link2">Blog</a>
+                    <a href = "#" class="sm-link2">Quartos</a>
+                    <a href = "#" class="sm-link2">Inscrição</a>
+                    <a href = "#" class="sm-link2">Cartão Presente</a>
+                </div>
+                <div>
+                    <h2>Privacidade</h2>
+                    <a href = "#" class="sm-link2">Carreira</a>
+                    <a href = "#" class="sm-link2">Sobre nós</a>
+                    <a href = "#" class="sm-link2">Contate-Nos</a>
+                    <a href = "#" class="sm-link2">Serviços</a>
+                </div>
+                <div>
+                    <h2>Contatos</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Av. fake jose da cunha, 727 - Centro, São Paulo, 1195 - SP
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            (11) 4784-9588
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            hotel@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        </body>
+        </html>

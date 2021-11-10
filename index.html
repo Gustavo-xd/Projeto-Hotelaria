@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>hotel Gp</title>
+	<!--fonte awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel = "icon" href = "images/logo2.png" type = "images/png">
+</head>
+
+<body>
+<header class="header">
+	<div class="container">
+		<div class = "head-top">
+			<div class = "site-name">
+				<span>HOTEL GP</span>
+			</div>
+			<div class = "site-nav">
+				<span id = "nav-btn2">MENU <i class = "fas fa-bars"></i></span>
+			</div>
+		</div>
+		<!-- barra de navegação lateral -->
+		<div class = "sidenav" id = "sidenav">
+			<span class = "cancel-btn2" id = "cancel-btn2">
+				<i class = "fas fa-times"></i>
+			</span>
+
+			<ul class = "navbar">
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "#hotels">Serviços</a></li>
+				<li><a href = "#quartos">Quartos</a></li>
+				<li><a href = "#contato">Contato</a></li>
+			</ul>
+			<button class = "btn2 sign-up"><a href = "cadastro.html">inscrever-se</a></button>
+			<button class = "btn2 log-in"><a href = "conectar.html">Conecte-se</a></button>
+		</div>
+		<!-- modal em tela cheia -->
+		<div id = "modal"></div>
+</header>
+
+<main>
+	<div class="hero">
+		<div class="container">
+			<div class="main-heading">
+				<h1 class="title">Descobrir</h1>
+				<h2 class="subtitle">Hotéis de luxo</h2>
+			</div>
+			<a href="#" class="btn btn-gradient">Explore agora
+				<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+			</a>
+		</div>
+	</div>
+
+	<section class="booking">
+		<div class="container">
+			<form action="" class="book-form">
+				<div class="input-group">
+					<label for="destination" class="input-label">Destino</label>
+					<input type="text" class="input" id="destination">
+				</div>
+				<div class="input-group">
+					<label for="check-in" class="input-label">Check-in</label>
+					<input type="date" class="input" id="check-in">
+				</div>
+				<div class="input-group">
+					<label for="check-out" class="input-label">Check-out</label>
+					<input type="date" class="input" id="check-out">
+				</div>
+				<div class="input-group">
+					<label for="adultos" class="input-label">Adultos</label>
+					<select class="options" id="adultos">
+						<option value="0">0</option>
+						<option value="0">1</option>
+						<option value="0">2</option>
+						<option value="0">3</option>
+						<option value="0">4</option>
+						<option value="0">5</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label for="crianças" class="input-label">Crianças</label>
+					<select class="options" id="crianças">
+						<option value="0">0</option>
+						<option value="0">1</option>
+						<option value="0">2</option>
+						<option value="0">3</option>
+						<option value="0">4</option>
+						<option value="0">5</option>
+					</select>
+				</div>
+				<button type="submit" class="btn from-btn btn-purple">Procurar
+					<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+				</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="hotels" class="hotels">
+		<div class="container">
+			<h5 class="section-head">
+				<span class="heading">Explorar</span>
+				<span class="sub-heading">Nossos lindos hotéis</span>
+			</h5>
+			<div class="grid">
+				<div class="grid-item featured-hotels">
+					<img src="./images/hotel_astro_resort.jpg" alt="" class="hotel-image">
+					<h5 class="hotel-name">Astro Hotel</h5>
+					<span class="hotel-price">a partir de R$229,94/noite</span>
+					<div class="hotel-rating">
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star-half rating"></i>
+					</div>
+					<a href="#" class="btn btn-gradient">Agende agora
+						<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+					</a>
+				</div>
+
+				<div class="grid-item featured-hotels">
+					<img src="./images/hotel_the_enchanted_garden.jpg" alt="" class="hotel-image">
+					<h5 class="hotel-name">Jardim Encantado</h5>
+					<span class="hotel-price">a partir de R$311,99/noite</span>
+					<div class="hotel-rating">
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+					</div>
+					<a href="#" class="btn btn-gradient">Agende agora
+						<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+					</a>
+				</div>
+
+				<div class="grid-item featured-hotels">
+					<img src="./images/hotel_the_paradise.jpg" alt="" class="hotel-image">
+					<h5 class="hotel-name">O Paraíso</h5>
+					<span class="hotel-price">a partir de R$350,00/noite</span>
+					<div class="hotel-rating">
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+						<i class="fas fa-star rating"></i>
+					</div>
+					<a href="#" class="btn btn-gradient">Agende agora
+						<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="oferta" class="oferta">
+		<div class="container">
+			<div class="oferta-content">
+				<div class="desconto">
+					40% off
+				</div>
+				<h5 class="hotel-name">O paraiso</h5>
+				<div class="hotel-rating">
+					<i class="fas fa-star rating"></i>
+					<i class="fas fa-star rating"></i>
+					<i class="fas fa-star rating"></i>
+					<i class="fas fa-star rating"></i>
+					<i class="fas fa-star rating"></i>
+				</div>
+				<p class="paragrafo">
+					Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores eius enim excepturi facere hic iste molestias.
+				</p>
+				<button class="btn btn-gradient" onclick="myFunction()">Resgatar oferta
+					<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+				</button>
+				<label id="demo"></label>
+				<script>
+					function myFunction()
+					{
+					var x;
+					
+					var codigo=prompt("Digite o codigo:");
+					
+					if (codigo!=null)
+					  {
+						x="Codigo: " + codigo + " Valido!";
+					  	document.getElementById("demo").innerHTML=x;
+					  }
+					}
+					</script>
+			</div>
+		</div>
+	</section>
+
+	<section id="quartos" class="rooms">
+		<div class="container">
+			<h5 class="section-head">
+				<span class="heading">Luxuosos</span>
+				<span class="sub-heading">Quartos acessíveis</span>
+			</h5>
+			<div class="grid rooms-grid">
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_1.jpg" alt="">
+						<h5 class="room-name">Astro Hotel</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$229,94 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_2.jpg" alt="">
+						<h5 class="room-name">Astro Hotel</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$229,94 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_3.jpg" alt="">
+						<h5 class="room-name">Astro Hotel</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$229,94 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_4.jpg" alt="">
+						<h5 class="room-name">Astro Hotel</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$229,94 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_5.jpg" alt="">
+						<h5 class="room-name">Jardim Encantado</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$311,99 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_6.jpg" alt="">
+						<h5 class="room-name">Jardim Encantado</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$311,99 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_7.jpg" alt="">
+						<h5 class="room-name">Jardim Encantado</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$311,99 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_8.jpg" alt="">
+						<h5 class="room-name">O Paraiso</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$350,00 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_9.jpg" alt="">
+						<h5 class="room-name">O Paraiso</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$350,00 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+				<div class="grid-item featured-rooms">
+					<div class="image-wrap">
+						<img class="room-image" src="./images/room_10.jpg" alt="">
+						<h5 class="room-name">O Paraiso</h5>
+					</div>
+					<div class="room-info-wrap">
+						<span class="room-price">R$350,00 <span class="per-night">
+							por noite</span></span>
+							<p class="paragrafo">
+								Lorem ipsum dolor sit amet, consectetur adipicing elit. animi consectetur<br>
+					deleniti doloremque dolores.
+							</p>
+							<a href="#" class="btn rooms-btn">Agende agora &rarr;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contato" class="contato">
+		<div class="container">
+			<h5 class="section-head">
+				<span class="heading">contato</span>
+				<span class="sub-heading">Entre em contato conosco</span>
+			</h5>
+			<div class="contato-content">
+				<div class="traveler-wrap">
+					<img src="./images/traveler.png" alt="">
+				</div>
+				<form action="" class="form contato-form">
+					<div class="input-group-wrap">
+						<div class="input-group">
+							<input type="text" class="input" placeholder="Nome" required>
+							<span class="bar"></span>
+						</div>
+						<div class="input-group">
+							<input type="email" class="input" placeholder="E-mail" required>
+							<span class="bar"></span>
+						</div>
+					</div>
+						<div class="input-group">
+							<input type="text" class="input" placeholder="Assunto" required>
+							<span class="bar"></span>
+						</div>
+						<div class="input-group">
+							<textarea class="input" cols="30" rows="8" placeholder="E-mail" required></textarea>
+							<span class="bar"></span>
+						</div>
+						<button type="submit" class="btn form-btn btn-purple">Enviar Mensagem
+							<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+						</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="footer">
+	<div class = "footer-container">
+		<div class="social-media-wrap">
+			<h4 class="footer-heading">Siga-nos</h4>
+			<div class="social-media">
+				<a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+			</div>
+		</div>
+		<div>
+			<h2>Links Úteis</h2>
+			<a href = "#" class="sm-link2">Blog</a>
+			<a href = "#" class="sm-link2">Quartos</a>
+			<a href = "#" class="sm-link2">Inscrição</a>
+			<a href = "#" class="sm-link2">Cartão Presente</a>
+		</div>
+		<div>
+			<h2>Privacidade</h2>
+			<a href = "#" class="sm-link2">Carreira</a>
+			<a href = "#" class="sm-link2">Sobre nós</a>
+			<a href = "#" class="sm-link2">Contate-Nos</a>
+			<a href = "#" class="sm-link2">Serviços</a>
+		</div>
+		<div>
+			<h2>Contatos</h2>
+			<div class = "contact-item">
+				<span>
+					<i class = "fas fa-map-marker-alt"></i>
+				</span>
+				<span>
+					Av. fake jose da cunha, 727 - Centro, São Paulo, 1195 - SP
+				</span>
+			</div>
+			<div class = "contact-item">
+				<span>
+					<i class = "fas fa-phone-alt"></i>
+				</span>
+				<span>
+					(11) 4784-9588
+				</span>
+			</div>
+			<div class = "contact-item">
+				<span>
+					<i class = "fas fa-envelope"></i>
+				</span>
+				<span>
+					hotel@domain.com
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
